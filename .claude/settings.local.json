@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem \"d:\\\\OneDrive - Flint And Fuel\\\\flintandfuel.co.za\\\\marketing manager\\\\26101_FAFC 2026\\\\landing page offer outreach\\\\Hemels Cafe\" -Recurse)",
+      "Bash(Select-Object Name, Extension, Length, DirectoryName)"
+    ]
+  }
+}
