@@ -388,12 +388,14 @@
     }
 
     .nav-brand {
-      font-family: var(--font-display);
-      font-size: 1.45rem;
-      font-weight: 500;
-      color: var(--mocha-dark);
-      letter-spacing: 0.03em;
       flex-shrink: 0;
+      line-height: 0;
+    }
+
+    .nav-brand img {
+      height: 40px;
+      width: auto;
+      display: block;
     }
 
     .nav-links {
@@ -1314,12 +1316,12 @@
 
     @media (min-width: 600px) { .footer-top { grid-template-columns: 2fr 1fr 1fr; } }
 
-    .footer-brand h3 {
-      font-family: var(--font-display);
-      font-size: 1.65rem;
-      font-weight: 400;
-      color: var(--white);
-      margin-bottom: 0.3rem;
+    .footer-brand-logo {
+      height: 56px;
+      width: auto;
+      display: block;
+      margin-bottom: 0.5rem;
+      filter: brightness(0) invert(1);
     }
 
     .footer-tagline {
@@ -1683,7 +1685,9 @@
        NAV
        ============================================================ -->
   <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
-    <a href="#" class="nav-brand" aria-label="Hemels Café — back to top">Hemels Café</a>
+    <a href="#" class="nav-brand" aria-label="Hemels Café — back to top">
+      <img src="hemels_cafe_logo.png" alt="Hemels Café">
+    </a>
     <ul class="nav-links" role="list">
       <li><a href="#experience">Experience</a></li>
       <li><a href="#menu">Menu</a></li>
@@ -2748,7 +2752,7 @@
       <div class="footer-top">
 
         <div class="footer-brand">
-          <h3>Hemels Café</h3>
+          <img src="hemels_cafe_logo.png" alt="Hemels Café" class="footer-brand-logo">
           <span class="footer-tagline">"A heavenly garden in the heart of Pretoria East."</span>
           <p class="footer-address">
             Green Grove, Lynnwood Road<br>
